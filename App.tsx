@@ -68,8 +68,8 @@ export default function App() {
         </Text>
       </View>
 
-      {/* New heading for Add Dish section */}
-      <Text style={styles.addDishHeading}>Add Dish</Text>
+
+      
 
       <View style={styles.inputContainer}>
         <TextInput
@@ -157,7 +157,7 @@ const styles = StyleSheet.create({
   addDishHeading: {
     fontSize: 24,
     fontWeight: "bold",
-    color: "#D3D3D3", // Bright gray color for the heading
+    color: "#D3D3D3", 
     marginBottom: 10,
     textAlign: "center",
   },
