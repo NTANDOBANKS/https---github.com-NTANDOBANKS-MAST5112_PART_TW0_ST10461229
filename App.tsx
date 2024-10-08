@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import { DishDetails } from "./type"; // Imports data from the type file to enable this app to function, ST10461229
+import { DishDetails } from "./type";
 import {
   FlatList,
   SafeAreaView,
