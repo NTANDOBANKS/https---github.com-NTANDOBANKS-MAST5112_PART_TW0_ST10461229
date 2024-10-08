@@ -23,12 +23,7 @@ export default function App() {
   const [totalDishes, setTotalDishes] = useState<number>(0);
   const [modalVisible, setModalVisible] = useState<boolean>(false);
 
-  const CourseOptions = [
-    "Starter",
-    "Main Course",
-    "Dessert",
-    "Beverage",
-  ];
+  const CourseOptions = ["Starter", "Main Course", "Dessert", "Beverage"];
 
   const handleSubmit = () => {
     const priceNum = parseFloat(price);
@@ -72,6 +67,9 @@ export default function App() {
           PRIVATE CHEF{"\n"}CHRISTOFFEL MENU
         </Text>
       </View>
+
+      {/* New heading for Add Dish section */}
+      <Text style={styles.addDishHeading}>Add Dish</Text>
 
       <View style={styles.inputContainer}>
         <TextInput
@@ -155,6 +153,13 @@ const styles = StyleSheet.create({
     color: "#FFD700",
     textAlign: "center",
     fontFamily: "Cochin",
+  },
+  addDishHeading: {
+    fontSize: 24,
+    fontWeight: "bold",
+    color: "#D3D3D3", // Bright gray color for the heading
+    marginBottom: 10,
+    textAlign: "center",
   },
   inputContainer: {
     marginBottom: 20,
